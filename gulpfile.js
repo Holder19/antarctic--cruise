@@ -14,6 +14,7 @@ const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
+const svgSprite = require('gulp-svg-sprite');
 
 const css = () => {
   return gulp.src('source/sass/style.scss')
@@ -52,12 +53,25 @@ const svgo = () => {
       .pipe(gulp.dest('source/img'));
 };
 
+// const sprite = () => {
+//   return gulp.src('source/img/sprite/*.svg')
+//       .pipe(svgstore({inlineSvg: true}))
+//       .pipe(rename('sprite_auto.svg'))
+//       .pipe(gulp.dest('build/img'));
+// };
+
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
-      .pipe(svgstore({inlineSvg: true}))
-      .pipe(rename('sprite_auto.svg'))
-      .pipe(gulp.dest('build/img'));
-};
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: "../sprite.svg"
+        }
+      },
+    }
+    ))
+    .pipe(gulp.dest("build/icons"));
+}
 
 const copySvg = () => {
   return gulp.src('source/img/**/*.svg', {base: 'source'})

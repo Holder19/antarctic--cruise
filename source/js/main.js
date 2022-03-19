@@ -1,46 +1,19 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
+const nav = document.querySelector('.header__nav');
+const navToggle = document.querySelector('.nav__toggle');
 
-// ---------------------------------
+const navMenuToggler = () => {
+  nav.classList.remove('nav--nojs');
+  nav.classList.add('nav--closed');
 
-window.addEventListener('DOMContentLoaded', () => {
-
-  // Utils
-  // ---------------------------------
-
-  iosVhFix();
-
-  // Modules
-  // ---------------------------------
-
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
-    initModals();
+  navToggle.addEventListener('click', () => {
+    if (nav.classList.contains('nav--closed')) {
+      nav.classList.remove('nav--closed');
+      nav.classList.add('nav--opened');
+    } else {
+      nav.classList.remove('nav--opened');
+      nav.classList.add('nav--closed');
+    }
   });
-});
+};
 
-// ---------------------------------
-
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
-
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
-
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✔️
-
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
-
-// для адаптивного JS используейтся matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
-
-// используйте .closest(el)
+navMenuToggler();

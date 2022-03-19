@@ -1,62 +1,117 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+  <body class="page__body">
+    <header class="page__header header">
+      <div class="page__leveler header__inner-wrapper">
+        <a class="header__logo logo" href="#">
+          <div class="logo__wrapper ">
+            <picture>
+              <img src="./icons/sprite.svg#logo" alt="Логотип" width="42" height="22">
+            </picture>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
+        </a>
+        <nav class="header__nav nav nav--nojs">
+          <div class="logo__wrapper logo__wrapper-blue logo__wrapper-blue--shown">
+            <img src="./icons/sprite.svg#logo-blue" alt="Логотип" width="42" height="22">
+        </div>
+          <ul>
+            <li>
+              <a href="#">Преимущества </a>
+            </li>
+            <li>
+              <a href="#">Направления</a>
+            </li>
+            <li>
+              <a href="#">Ближайшие круизы</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="nav__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main main">
+      <section class="main__intro intro">
+        <div class="page__leveler">
+          <h1>Круизы в Антарктику</h1>
+          <p>
+            Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов
+          </p>
+          <div class="intro__img-wrapper">
+            <img src="./img/content/main-image-desktop.jpg" srcset="./img/content/main-image-desktop@2x.jpg 2x" alt="Фото айсбергов" width="1366" height="650">
+          </div>
+        </div>
+      </section>
+
+      <section class="page__travel travel">
+        <div class="page__leveler travel__inner-wrapper">
+          <div class="travel__description">
+            <h2>
+              Путешествие на&nbsp;край&nbsp;Земли
+            </h2>
+            <p>
+              Это волшебное путешествие поможет вам познакомиться поближе
+              с&nbsp;удивительным миром Антарктики. Наш&nbsp;круизный лайнер отвезет вас
+              на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
+              морских котиков и многое другое.
+            </p>
+          </div>
+          <div class="travel__img-wrapper">
+            <img src="./img/content/penguins-desktop.jpg" srcset="./img/content/penguins-desktop@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="page__leveler">
+        <div class="footer__inner-wrapper">
+          <a class="header__logo logo" href="#">
+            <div class="logo__wrapper">
+                <img src="./icons/sprite.svg#logo" alt="Логотип" width="42" height="22">
+            </div>
+          </a>
+          <nav class="footer__nav nav">
+            <ul>
+              <li>
+                <a href="#">Преимущества </a>
+              </li>
+              <li>
+                <a href="#">Направления</a>
+              </li>
+              <li>
+                <a href="#">Ближайшие круизы</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__social social">
+            <ul>
+              <li>
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+              </li>
+              <li>
+                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Инстаграм</span></a>
+              </li>
+              <li>
+                <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
+    </footer>
+    <script src="./js/main.min.js"></script>
   </body>
 </html>

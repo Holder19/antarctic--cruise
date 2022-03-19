@@ -1,0 +1,23 @@
+.header__inner-wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.header__nav {
+  justify-self: end;
+}
+
+.header__nav a {
+  @media (max-width: $tablet) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $mobile) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+

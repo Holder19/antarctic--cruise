@@ -1,0 +1,154 @@
+.nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet) {
+    gap: 23px;
+  }
+
+  @media (max-width: $mobile) {
+    gap: 13px;
+  }
+}
+
+.nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav a {
+  display: block;
+  color: var(--default-white-color);
+  line-height: 20px;
+  font-weight: 500;
+  padding: 5px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.nav--opened a {
+  @media (max-width: $mobile) {
+    color: var(--default-font-color);
+  }
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  outline: 0;
+  border: 0;
+  background: none;
+}
+
+.nav--opened ul {
+  @media (max-width: $mobile) {
+    background-color: var(--default-white-color);
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    right: 0;
+    flex-direction: column;
+    padding: 60px 30px 40px 15px;
+    min-width: 285px;
+    width: 100%;
+    list-style: none;
+  }
+
+}
+
+.nav--nojs ul {
+  @media (max-width: $mobile) {
+    background-color: var(--default-white-color);
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    right: 0;
+    flex-direction: column;
+    padding: 60px 30px 40px 15px;
+    min-width: 285px;
+    width: 100%;
+    list-style: none;
+  }
+}
+
+.nav--nojs a {
+  @media (max-width: $mobile) {
+    color: var(--default-font-color);
+  }
+}
+
+.nav--opened .nav__toggle {
+  z-index: 3;
+  background: none;
+  display: block;
+
+  &::before,
+  &::after {
+    top: 25px;
+    right: 15px;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: var(--default-font-color);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.nav--opened, .nav--nojs
+.logo__wrapper-blue {
+  @media (max-width: $mobile) {
+    display: block;
+  }
+
+}
+
+.nav--closed ul{
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.nav--opened .logo__wrapper {
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.nav--closed .nav__toggle {
+  @media (max-width: $mobile) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 14px;
+      width: 24px;
+      height: 2px;
+      background-color: var(--default-white-color);
+      box-shadow: 0 8px 0 0 var(--default-white-color), 0 16px 0 0 var(--default-white-color);
+    }
+  }
+}
