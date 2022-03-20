@@ -12,6 +12,7 @@
   @media (max-width: $mobile) {
     grid-template-columns: none;
     gap: 40px;
+    justify-items: center;
   }
 }
 
@@ -40,6 +41,10 @@
   margin: 0;
   max-width: 512px;
   text-align: left;
+
+  @media (max-width: $mobile) {
+    text-align:initial
+  }
 }
 
 .travel__img-wrapper img {

@@ -4,6 +4,7 @@
   line-height: 150%;
   font-style: normal;
   font-weight: 400;
+  color: var(--default-font-color);
 }
 
 .page__leveler {
@@ -54,5 +55,20 @@
 
   @media (max-width: $mobile) {
     padding-top: 250px;
+  }
+}
+
+.page__features {
+  margin-bottom: 120px;
+  padding: 120px 0;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 102px;
+    padding: 100px 0;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 65px;
+    padding: 65px 0;
   }
 }
