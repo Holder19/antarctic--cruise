@@ -48,7 +48,13 @@
             Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов
           </p>
           <div class="intro__img-wrapper">
-            <img src="./img/content/main-image-desktop.jpg" srcset="./img/content/main-image-desktop@2x.jpg 2x" alt="Фото айсбергов" width="1366" height="650">
+            <picture>
+              <source media="(min-width: 1100px)" type="image/webp" srcset="./img/content/main-image-desktop.webp 1x, ./img/content/main-image-desktop@2x.webp 2x">
+              <source media="(min-width: 678px)" type="image/webp" srcset="./img/content/main-image-tablet@1x.webp 1x , ./img/content/main-image-tablet@2x.webp 2x">
+              <source media="(min-width: 290px)" type="image/webp" srcset="./img/content/main-image-mobile@2x.webp 1x , ./img/content/main-image-mobile@2x.webp 2x">
+              <!-- 1x:1366px , 2x: 2732px -->
+              <img src="./img/content/main-image-desktop.jpg" srcset="./img/content/main-image-desktop@2x.jpg 2x" alt="Фото айсбергов" width="1366" height="650">
+            </picture>
           </div>
         </div>
       </section>
@@ -67,7 +73,13 @@
             </p>
           </div>
           <div class="travel__img-wrapper">
-            <img src="./img/content/penguins-desktop.jpg" srcset="./img/content/penguins-desktop@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
+            <picture>
+              <source media="(min-width: 1100px)" type="image/webp" srcset="./img/content/penguins-desktop.webp 1x, ./img/content/penguins-desktop@2x.webp 2x">
+              <source media="(min-width: 678px)" type="image/webp" srcset="./img/content/penguins-tablet.webp 1x, ./img/content/penguins-tablet@2x.webp 2x">
+              <source media="(min-width: 290px)" type="image/webp" srcset="./img/content/penguins-mobile.webp 1x, ./img/content/penguins-mobile@2x.webp 2x">
+              <!--1x: 560px, 2x: 1120px -->
+              <img src="./img/content/penguins-desktop.jpg" srcset="./img/content/penguins-desktop@2x.jpg 2x" alt="Фото пингвинов" width="560" height="301">
+            </picture>
           </div>
         </div>
       </section>

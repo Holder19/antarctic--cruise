@@ -53,12 +53,6 @@ const svgo = () => {
       .pipe(gulp.dest('source/img'));
 };
 
-// const sprite = () => {
-//   return gulp.src('source/img/sprite/*.svg')
-//       .pipe(svgstore({inlineSvg: true}))
-//       .pipe(rename('sprite_auto.svg'))
-//       .pipe(gulp.dest('build/img'));
-// };
 
 const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
@@ -140,14 +134,21 @@ const start = gulp.series(build, syncServer);
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 const createWebp = () => {
-  const root = '';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src(`source/img/**/*.{png,jpg}`)
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
+    .pipe(gulp.dest(`source/img/`));
 };
 
+// const createWebp = () => {
+//   return gulp.src('source/img/**/*.{png,jpg}')
+//     .pipe(squoosh({
+//       webp: {}
+//     }))
+//     .pipe(gulp.dest('build/img'))
+// }
+
 const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}')
       .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
