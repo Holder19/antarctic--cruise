@@ -17,13 +17,11 @@
 .social__link--instagram {
   &::before {
     mask: url("../../icons/sprite.svg#social-icon-instagram") no-repeat center/ 30px;
-
   }
 }
 
 .social__link--twitter {
   &::before {
     mask: url("../../icons/sprite.svg#social-icon-twitter") no-repeat center / 30px;
-
   }
 }

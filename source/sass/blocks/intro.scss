@@ -22,7 +22,6 @@
     line-height: 125%;
     margin-bottom: 25px;
   }
-
 }
 
 .intro p {
@@ -43,14 +42,9 @@
     font-size: 16px;
     line-height: 140%;
   }
-
 }
 
-.intro__img-wrapper {
-  @media (max-width: $tablet) {}
-}
-
-.intro__img-wrapper img{
+.intro__img-wrapper img {
   position: absolute;
   top: 0;
   right: 0;
