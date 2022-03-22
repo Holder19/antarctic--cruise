@@ -1,0 +1,154 @@
+.cruises h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.cruises ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cruises > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 309px 309px;
+    justify-items: start;
+    justify-content: center;
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-columns: none;
+  }
+}
+
+.cruises li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cruises__wrapper--front {
+  display: grid;
+}
+
+.cruises__img-wrapper {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.cruises__img-wrapper img {
+  object-fit: cover;
+  min-width: 260px;
+
+  @media (max-width: $tablet) {
+    min-width: 309px;
+    height: 386px;
+  }
+
+  @media (max-width: $mobile) {
+    min-width: 270px;
+    height: 386px;
+  }
+}
+
+.cruises__wrapper--front h3 {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  margin: auto 30px 30px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--default-white-color);
+}
+
+
+.cruises__wrapper--back {
+  background-color: var(--default-font-color);
+  padding: 21px 25px;
+  display: none;
+  width: 260px;
+  height: 386px;
+
+  @media (max-width: $tablet) {
+    min-width: 309px;
+    padding: 21px 35px;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: 270px;
+    padding: 21px 25px;
+  }
+}
+
+.cruises__wrapper--back ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cruises__wrapper--back h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--default-white-color);
+  margin-bottom: 10px;
+}
+
+.cruises__wrapper--back h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--default-white-color);
+  margin-bottom: 6px;
+}
+
+.cruises__wrapper--back p {
+  margin: 0;
+  padding: 0;
+  color: var(--cruises-card-gray-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.cruises__wrapper--back a {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--default-font-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 9px;
+  background-color: var(--default-white-color);
+  min-width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+.cruises__item:hover .cruises__wrapper--front {
+  display: none;
+}
+
+.cruises__item:hover .cruises__wrapper--back {
+  display: flex;
+  flex-direction: column;
+}
+
