@@ -1,0 +1,211 @@
+.booking {
+  background-image: url("../../img/content/booking-bg-image-desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 555px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/booking-bg-image-desktop@2x.png");
+    }
+  }
+
+  @media (max-width: $tablet) {
+    background-image: url("../../img/content/booking-bg-image-tablet.png");
+    min-height: 805px;
+    flex-direction: column;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/booking-bg-image-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile) {
+    background-image: url("../../img/content/booking-bg-image-mobile.png");
+    min-height: 760px;
+    justify-content: start;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/content/booking-bg-image-mobile@2x.png");
+    }
+  }
+}
+
+.booking__content-wrapper {
+  align-self: center;
+}
+
+.booking__content-wrapper h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 25px;
+    font-size: 34px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+  }
+}
+
+.booking__content-wrapper p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 352px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+}
+
+.booking__form-wrapper {
+  align-self: center;
+  background-color: var(--default-font-color);
+  padding: 40px;
+  color: var(--default-white-color);
+  width: 403px;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding: 40px 30px;
+  }
+}
+
+.booking__form-wrapper h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (max-width: $mobile) {
+    line-height: 140%;
+    text-align: center;
+  }
+}
+
+.booking__form-wrapper form {
+  margin: 0;
+  padding: 0;
+}
+
+.booking__form-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.booking__form-wrapper li {
+  margin: 0;
+  padding: 0;
+}
+
+.booking__form-wrapper input {
+  padding: 11px 16px;
+  width: 100%;
+  color: var(--default-font-color);
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  &::placeholder {
+    opacity: 0.7;
+  }
+}
+
+.booking__form-wrapper p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.booking__form-wrapper input[type = "checkbox"] + label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 10px;
+  line-height: 130%;
+
+  @media (max-width: $mobile) {
+    line-height: 120%;
+  }
+}
+
+.booking__form-wrapper input[type = "checkbox"] + label::before {
+  content: "";
+  min-width: 18px;
+  height: 18px;
+  background-color: var(--default-white-color);
+}
+
+.booking__form-wrapper input[type = "checkbox"]:focus-visible + label::before {
+  box-shadow: 0 0 0 0.2em var(--focus-color);
+}
+
+
+.booking__form-wrapper input[type = "checkbox"] + label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+
+.booking__form-wrapper input[type = "checkbox"]:checked + label::after {
+  content: "";
+  background-image: url("../../icons/sprite.svg#checkbox-on");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.booking__form-wrapper button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--default-font-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 9px;
+  background-color: var(--default-white-color);
+  min-width: 303px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: auto;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media (max-width: $mobile) {
+    min-width: 100%;
+  }
+}

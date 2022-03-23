@@ -85,3 +85,15 @@
     padding-bottom: 65px;
   }
 }
+
+.page__booking {
+  padding: 50px 163px;
+
+  @media (max-width: $tablet) {
+    padding: 100px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 65px 15px;
+  }
+}
