@@ -93,7 +93,19 @@
     padding: 100px;
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: $mobile) {
     padding: 65px 15px;
+  }
+}
+
+.page__contacts {
+  padding: 120px 0;
+
+  @media (max-width: $tablet) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 65px 0;
   }
 }
