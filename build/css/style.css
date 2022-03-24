@@ -211,6 +211,10 @@ textarea {
   transform: rotate(-45deg);
 }
 
+.nav__logo-wrapper_blue {
+  display: none;
+}
+
 .header__inner-wrapper {
   display: -ms-grid;
   display: grid;
@@ -228,10 +232,6 @@ textarea {
 
 .logo__wrapper img {
   max-width: none;
-}
-
-.logo__wrapper-blue {
-  display: none;
 }
 
 .footer {
@@ -1141,8 +1141,15 @@ textarea {
     color: var(--default-font-color);
   }
 
+  .nav__logo-wrapper_blue--shown {
+    position: absolute;
+    z-index: 3;
+    left: 18px;
+    top: 20px;
+  }
+
   .nav--opened,
-  .nav--nojs .logo__wrapper-blue {
+  .nav--nojs .nav__logo-wrapper_blue {
     display: block;
   }
 
@@ -1150,7 +1157,7 @@ textarea {
     display: none;
   }
 
-  .nav--opened .logo__wrapper {
+  .nav--opened .nav__logo-wrapper_blue {
     display: block;
   }
 
@@ -1170,17 +1177,6 @@ textarea {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-  }
-
-  .logo__wrapper--hide {
-    display: none;
-  }
-
-  .logo__wrapper-blue--shown {
-    position: absolute;
-    z-index: 3;
-    left: 18px;
-    top: 20px;
   }
 
   .footer__inner-wrapper {

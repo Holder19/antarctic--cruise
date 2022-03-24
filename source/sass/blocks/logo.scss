@@ -6,22 +6,3 @@
     height: 20px;
   }
 }
-
-.logo__wrapper--hide {
-  @media (max-width: $mobile) {
-    display: none;
-  }
-}
-
-.logo__wrapper-blue {
-  display: none;
-}
-
-.logo__wrapper-blue--shown {
-  @media (max-width: $mobile) {
-    position: absolute;
-    z-index: 3;
-    left: 18px;
-    top: 20px;
-  }
-}

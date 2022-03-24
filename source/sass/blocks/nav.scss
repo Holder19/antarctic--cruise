@@ -117,8 +117,22 @@
   }
 }
 
+.nav__logo-wrapper_blue {
+  display: none;
+}
+
+.nav__logo-wrapper_blue--shown {
+  @media (max-width: $mobile) {
+    position: absolute;
+    z-index: 3;
+    left: 18px;
+    top: 20px;
+  }
+}
+
+
 .nav--opened,
-.nav--nojs .logo__wrapper-blue {
+.nav--nojs .nav__logo-wrapper_blue {
   @media (max-width: $mobile) {
     display: block;
   }
@@ -130,7 +144,7 @@
   }
 }
 
-.nav--opened .logo__wrapper {
+.nav--opened .nav__logo-wrapper_blue {
   @media (max-width: $mobile) {
     display: block;
   }
