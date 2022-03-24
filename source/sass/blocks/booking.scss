@@ -27,6 +27,7 @@
     background-image: url("../../img/content/booking-bg-image-mobile.png");
     min-height: 760px;
     justify-content: start;
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/content/booking-bg-image-mobile@2x.png");
     }
@@ -144,7 +145,7 @@
   margin-bottom: 20px;
 }
 
-.booking__form-wrapper input[type = "checkbox"] + label {
+.booking__form-wrapper input[type="checkbox"] + label {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -158,26 +159,26 @@
   }
 }
 
-.booking__form-wrapper input[type = "checkbox"] + label::before {
+.booking__form-wrapper input[type="checkbox"] + label::before {
   content: "";
   min-width: 18px;
   height: 18px;
   background-color: var(--default-white-color);
 }
 
-.booking__form-wrapper input[type = "checkbox"]:focus-visible + label::before {
+.booking__form-wrapper input[type="checkbox"]:focus-visible + label::before {
   box-shadow: 0 0 0 0.2em var(--focus-color);
 }
 
 
-.booking__form-wrapper input[type = "checkbox"] + label::after {
+.booking__form-wrapper input[type="checkbox"] + label::after {
   content: "";
   width: 18px;
   height: 18px;
   position: absolute;
 }
 
-.booking__form-wrapper input[type = "checkbox"]:checked + label::after {
+.booking__form-wrapper input[type="checkbox"]:checked + label::after {
   content: "";
   background-image: url("../../icons/sprite.svg#checkbox-on");
   background-repeat: no-repeat;
