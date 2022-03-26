@@ -7,6 +7,10 @@
       <meta name="description" content="Описание проекта">
       <title>Круизы в Антарктику</title>
       <link rel="stylesheet" href="css/style.min.css">
+      <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
     </head>
     <body class="page__body">
       <header class="page__header header">
@@ -43,7 +47,9 @@
       <main class="page__main main">
         <section class="main__intro intro">
           <div class="page__leveler">
-            <h1>Круизы в Антарктику</h1>
+            <h1>
+              Круизы в&nbsp;Антарктику
+            </h1>
             <p>
               Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов
             </p>
@@ -98,14 +104,16 @@
               <li class="features__item features__item--check-mark">
                 <h3>Система все&nbsp;включено</h3>
                 <p>
-                  Все наши круизы работают
-                  по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24&nbsp;часа.
+                  Все наши круизы работают<br>
+                  по системе “Все Включено”.<br> Великолепные блюда и безлимитный бар доступны для вас 24&nbsp;часа.
                 </p>
               </li>
               <li class="features__item features__item--speedboat">
-                <h3>Экскурсионные туры на Zodiac</h3>
+                <h3>
+                  Экскурсионные туры&nbsp;на&nbsp;Zodiac
+                </h3>
                 <p>
-                  Экскурсионные&nbsp;туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках&nbsp;типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.
+                  Экскурсионные&nbsp;туры к&nbsp;берегам Антарктиды совершаются <br>на оборудованных лодках&nbsp;типа <br>Zodiac в&nbsp;сопровождении <br>опытных экскурсоводов.
                 </p>
               </li>
             </ul>
@@ -417,7 +425,7 @@
             <h3>
               Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время
             </h3>
-            <form action="#" method="post">
+            <form id="booking-form" action="https://echo.htmlacademy.ru" method="post">
               <ul>
                 <li>
                   <label for="name"><span class="visually-hidden">Имя</span></label>
@@ -425,7 +433,7 @@
                 </li>
                 <li>
                   <label for="name"><span class="visually-hidden">Телефон</span></label>
-                  <input type="tel" name="tel-field" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Телефон" required>
+                  <input type="tel" name="tel-field" id="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" required>
                 </li>
                 <li>
                   <label for="name"><span class="visually-hidden">Email</span></label>
@@ -433,10 +441,10 @@
                 </li>
               </ul>
               <p>
-                <input class="visually-hidden" type="checkbox" name="checkbox-field" id="checkbox" required>
+                <input checked class="visually-hidden" type="checkbox" name="checkbox-field" id="checkbox" required>
                 <label for="checkbox">Я согласен на обработку моих&nbsp;персональных&nbsp;данных</label>
               </p>
-              <button type="submit">Оставить заявку</button>
+              <button id="submit-button" type="submit">Оставить заявку</button>
             </form>
           </div>
         </section>

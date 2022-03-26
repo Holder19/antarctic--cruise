@@ -115,7 +115,7 @@ textarea {
 }
 
 .page__footer {
-  padding: 47px 0;
+  padding: 50px 0;
 }
 
 .page__travel {
@@ -124,8 +124,8 @@ textarea {
 }
 
 .page__features {
-  margin-bottom: 120px;
-  padding: 120px 0;
+  margin-bottom: 110px;
+  padding: 115px 0;
 }
 
 .page__cruises {
@@ -137,7 +137,7 @@ textarea {
 }
 
 .page__contacts {
-  padding: 120px 0;
+  padding: 116px 0;
 }
 
 .nav ul {
@@ -146,7 +146,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 33px;
+  gap: 22px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -170,11 +170,11 @@ textarea {
 }
 
 .nav__toggle {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
-  display: block;
   width: 50px;
   height: 50px;
   outline: 0;
@@ -232,6 +232,7 @@ textarea {
 
 .logo__wrapper img {
   max-width: none;
+  width: 70px;
 }
 
 .footer {
@@ -306,11 +307,11 @@ textarea {
   padding: 0;
   color: var(--default-white-color);
   font-weight: 700;
-  font-size: 54px;
+  font-size: 60px;
   line-height: 66px;
-  padding-top: 210px;
+  padding-top: 197px;
   margin-left: 95px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .intro p {
@@ -340,7 +341,7 @@ textarea {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 39px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -355,7 +356,7 @@ textarea {
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 
 .travel__description p {
@@ -363,6 +364,9 @@ textarea {
   margin: 0;
   max-width: 512px;
   text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .travel__img-wrapper img {
@@ -380,7 +384,7 @@ textarea {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
@@ -401,7 +405,7 @@ textarea {
   position: relative;
   margin: 0;
   background-color: var(--default-white-color);
-  padding: 87px 34px 30px 30px;
+  padding: 80px 34px 27px 30px;
   max-width: 360px;
   list-style: none;
   display: -webkit-box;
@@ -411,7 +415,7 @@ textarea {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
+  gap: 9px;
 }
 
 .features li::before {
@@ -419,14 +423,15 @@ textarea {
   position: absolute;
   background-position: center;
   background-repeat: no-repeat;
-  top: 30px;
+  top: 27px;
 }
 
 .features__item--ship::before {
   background-image: url("../../icons/sprite.svg#ship-icon");
   width: 40px;
   height: 34px;
-  left: 20px;
+  left: 22px;
+  background-size: 49px;
 }
 
 .features__item--check-mark::before {
@@ -463,6 +468,9 @@ textarea {
   font-size: 28px;
   line-height: 150%;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
 }
 
 .cruises ul {
@@ -479,6 +487,7 @@ textarea {
   -ms-flex-align: center;
   align-items: center;
   gap: 30px;
+  padding: 0 15px;
 }
 
 .cruises li {
@@ -506,7 +515,7 @@ textarea {
 .cruises__wrapper--front h3 {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
-  margin: auto 30px 30px;
+  margin: auto 33px 22px;
   padding: 0;
   font-size: 18px;
   line-height: 150%;
@@ -515,7 +524,7 @@ textarea {
 
 .cruises__wrapper--back {
   background-color: var(--default-font-color);
-  padding: 21px 25px;
+  padding: 30px 25px;
   display: none;
   width: 260px;
   height: 386px;
@@ -550,7 +559,7 @@ textarea {
   font-size: 14px;
   line-height: 140%;
   color: var(--default-white-color);
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 }
 
 .cruises__wrapper--back p {
@@ -614,21 +623,23 @@ textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
 }
 
 .booking__content-wrapper {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  padding-bottom: 16px;
 }
 
 .booking__content-wrapper h2 {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 150%;
+  margin-bottom: 10px;
 }
 
 .booking__content-wrapper p {
@@ -645,9 +656,10 @@ textarea {
   -ms-grid-row-align: center;
   align-self: center;
   background-color: var(--default-font-color);
-  padding: 40px;
+  padding: 43px 48px 50px;
   color: var(--default-white-color);
   width: 403px;
+  min-height: 455px;
 }
 
 .booking__form-wrapper h3 {
@@ -656,7 +668,7 @@ textarea {
   line-height: 150%;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .booking__form-wrapper form {
@@ -676,7 +688,7 @@ textarea {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .booking__form-wrapper li {
@@ -717,7 +729,7 @@ textarea {
 .booking__form-wrapper p {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .booking__form-wrapper input[type="checkbox"] + label {
@@ -788,6 +800,12 @@ textarea {
   opacity: 0.8;
 }
 
+.booking__form-wrapper button:disabled {
+  cursor: auto;
+  opacity: 0.2;
+  background-color: var(--cruises-card-gray-color);
+}
+
 .contacts__inner-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,7 +825,7 @@ textarea {
   line-height: 150%;
   margin: 0;
   padding: 0;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
 }
 
 .contacts__content-wrapper address {
@@ -815,7 +833,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,34 +900,35 @@ textarea {
     margin: 0 45px;
   }
 
+  .page__header {
+    padding: 27px 0;
+  }
+
   .page__travel {
-    padding-bottom: 100px;
-    padding-top: 380px;
+    padding-bottom: 92px;
+    padding-top: 370px;
   }
 
   .page__features {
-    margin-bottom: 102px;
-    padding: 100px 0;
+    margin-bottom: 88px;
+    padding: 90px 0 100px;
   }
 
   .page__cruises {
     padding-bottom: 100px;
   }
 
-  .page__cruises {
-    padding-bottom: 65px;
-  }
-
   .page__booking {
-    padding: 100px;
+    padding: 72px;
+    padding-top: 87px;
   }
 
   .page__contacts {
-    padding: 100px 0;
+    padding: 96px 0;
   }
 
   .nav ul {
-    gap: 23px;
+    gap: 11px;
   }
 
   .nav a {
@@ -932,14 +951,14 @@ textarea {
   }
 
   .footer__social ul {
-    gap: 23px;
+    gap: 14px;
   }
 
   .intro h1 {
-    font-size: 50px;
+    font-size: 56px;
     line-height: 61px;
     margin-left: 0;
-    padding-top: 235px;
+    padding-top: 187px;
   }
 
   .intro p {
@@ -959,7 +978,7 @@ textarea {
   .travel__description h2 {
     font-size: 26px;
     line-height: 140%;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
   }
 
   .travel__img-wrapper img {
@@ -976,6 +995,7 @@ textarea {
   .features h2 {
     font-size: 26px;
     line-height: 150%;
+    margin-bottom: 49px;
   }
 
   .features ul {
@@ -983,17 +1003,29 @@ textarea {
   }
 
   .features li {
-    padding: 76px 16px 25px 20px;
+    padding: 73px 16px 21px 20px;
     max-width: 206px;
   }
 
+  .features li::before {
+    top: 21px;
+  }
+
+  .features__item br {
+    display: none;
+  }
+
   .features__item--ship::before {
-    left: 10px;
+    left: 15px;
   }
 
   .features h3 {
     line-height: 140%;
     white-space: normal;
+  }
+
+  .cruises h2 {
+    margin-bottom: 48px;
   }
 
   .cruises > ul {
@@ -1015,11 +1047,6 @@ textarea {
     padding: 21px 35px;
   }
 
-  .cruises__wrapper--back {
-    min-width: 270px;
-    padding: 21px 25px;
-  }
-
   .booking {
     background-image: url("../../img/content/booking-bg-image-tablet.png");
     min-height: 805px;
@@ -1027,20 +1054,29 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+
+  .booking__content-wrapper {
+    padding-bottom: 0;
   }
 
   .booking__content-wrapper h2 {
-    margin-bottom: 25px;
-    font-size: 34px;
+    margin-bottom: 5px;
+    font-size: 37px;
+    line-height: 51px;
   }
 
   .booking__content-wrapper p {
-    margin-bottom: 60px;
+    margin-bottom: 53px;
+    margin-left: 30px;
     text-align: center;
   }
 
   .contacts__inner-wrapper {
-    gap: 30px;
+    gap: 34px;
   }
 
   .contacts__map iframe {
@@ -1049,7 +1085,7 @@ textarea {
   }
 
   .contacts__content-wrapper p {
-    margin-bottom: 40px;
+    margin-bottom: 26px;
   }
 
   .contacts__content-wrapper address::before {
@@ -1081,20 +1117,25 @@ textarea {
   }
 
   .page__travel {
-    padding-top: 250px;
+    padding-top: 240px;
+    padding-bottom: 65px;
   }
 
   .page__features {
-    margin-bottom: 65px;
-    padding: 65px 0;
+    margin-bottom: 55px;
+    padding: 57px 0 66px;
+  }
+
+  .page__cruises {
+    padding-bottom: 65px;
   }
 
   .page__booking {
-    padding: 65px 15px;
+    padding: 57px 15px 65px;
   }
 
   .page__contacts {
-    padding: 65px 0;
+    padding: 57px 0;
   }
 
   .nav ul {
@@ -1103,6 +1144,10 @@ textarea {
 
   .nav--opened a {
     color: var(--default-font-color);
+  }
+
+  .nav__toggle {
+    display: block;
   }
 
   .nav--opened ul {
@@ -1195,14 +1240,14 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 13px;
+    gap: 0;
   }
 
   .intro h1 {
-    padding-top: 143px;
-    font-size: 36px;
-    line-height: 125%;
-    margin-bottom: 25px;
+    padding-top: 136px;
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 10px;
   }
 
   .intro p {
@@ -1217,7 +1262,7 @@ textarea {
   .travel__inner-wrapper {
     -ms-grid-columns: none;
     grid-template-columns: none;
-    gap: 40px;
+    gap: 33px;
     justify-items: center;
   }
 
@@ -1228,6 +1273,7 @@ textarea {
 
   .travel__description p {
     text-align: initial;
+    max-width: 290px;
   }
 
   .travel__img-wrapper img {
@@ -1243,7 +1289,7 @@ textarea {
   .features h2 {
     font-size: 24px;
     line-height: 150%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .features ul {
@@ -1254,20 +1300,41 @@ textarea {
 
   .features li {
     max-width: 290px;
+    padding: 73px 17px 21px;
+    gap: 7px;
+  }
+
+  .features__item br {
+    display: block;
   }
 
   .features__item--ship::before {
-    left: 12px;
+    left: 5px;
+  }
+
+  .features h3 {
+    max-width: 210px;
+  }
+
+  .cruises h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
   }
 
   .cruises > ul {
     -ms-grid-columns: none;
     grid-template-columns: none;
+    padding: 0;
   }
 
   .cruises__img-wrapper img {
     min-width: 270px;
     height: 386px;
+  }
+
+  .cruises__wrapper--back {
+    min-width: 270px;
+    padding: 21px 25px;
   }
 
   .booking {
@@ -1279,7 +1346,7 @@ textarea {
   }
 
   .booking__content-wrapper h2 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 130%;
     text-align: center;
   }
@@ -1287,12 +1354,14 @@ textarea {
   .booking__content-wrapper p {
     font-size: 16px;
     line-height: 140%;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
+    margin-left: 0;
+    padding: 0 12px;
   }
 
   .booking__form-wrapper {
     width: 100%;
-    padding: 40px 30px;
+    padding: 35px 30px;
   }
 
   .booking__form-wrapper h3 {

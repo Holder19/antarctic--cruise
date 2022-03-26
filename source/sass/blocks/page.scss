@@ -32,13 +32,17 @@
 .page__header {
   padding: 35px 0 0;
 
+  @media (max-width: $tablet) {
+    padding: 27px 0;
+  }
+
   @media (max-width: $mobile) {
     padding: 20px 0 0;
   }
 }
 
 .page__footer {
-  padding: 47px 0;
+  padding: 50px 0;
 
   @media (max-width: $mobile) {
     padding: 40px 0;
@@ -50,27 +54,28 @@
   padding-bottom: 120px;
 
   @media (max-width: $tablet) {
-    padding-bottom: 100px;
-    padding-top: 380px;
+    padding-bottom: 92px;
+    padding-top: 370px;
   }
 
   @media (max-width: $mobile) {
-    padding-top: 250px;
+    padding-top: 240px;
+    padding-bottom: 65px;
   }
 }
 
 .page__features {
-  margin-bottom: 120px;
-  padding: 120px 0;
+  margin-bottom: 110px;
+  padding: 115px 0;
 
   @media (max-width: $tablet) {
-    margin-bottom: 102px;
-    padding: 100px 0;
+    margin-bottom: 88px;
+    padding: 90px 0 100px;
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 65px;
-    padding: 65px 0;
+    margin-bottom: 55px;
+    padding: 57px 0 66px;
   }
 }
 
@@ -81,8 +86,9 @@
     padding-bottom: 100px;
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: $mobile) {
     padding-bottom: 65px;
+
   }
 }
 
@@ -90,22 +96,23 @@
   padding: 50px 163px;
 
   @media (max-width: $tablet) {
-    padding: 100px;
+    padding: 72px;
+    padding-top: 87px;
   }
 
   @media (max-width: $mobile) {
-    padding: 65px 15px;
+    padding: 57px 15px 65px;
   }
 }
 
 .page__contacts {
-  padding: 120px 0;
+  padding: 116px 0;
 
   @media (max-width: $tablet) {
-    padding: 100px 0;
+    padding: 96px 0;
   }
 
   @media (max-width: $mobile) {
-    padding: 65px 0;
+    padding: 57px 0;
   }
 }

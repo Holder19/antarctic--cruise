@@ -26,7 +26,7 @@
 .footer__nav ul {
   @media (max-width: $mobile) {
     flex-direction: column;
-    gap: 13px;
+    gap: 0;
   }
 }
 
@@ -38,7 +38,7 @@
   flex-wrap: wrap;
 
   @media (max-width: $tablet) {
-    gap: 23px;
+    gap: 14px;
   }
 }
 

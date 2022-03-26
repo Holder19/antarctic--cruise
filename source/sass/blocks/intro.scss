@@ -3,24 +3,24 @@
   padding: 0;
   color: var(--default-white-color);
   font-weight: 700;
-  font-size: 54px;
+  font-size: 60px;
   line-height: 66px;
-  padding-top: 210px;
+  padding-top: 197px;
   margin-left: 95px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   @media (max-width: $tablet) {
-    font-size: 50px;
+    font-size: 56px;
     line-height: 61px;
     margin-left: 0;
-    padding-top: 235px;
+    padding-top: 187px;
   }
 
   @media (max-width: $mobile) {
-    padding-top: 143px;
-    font-size: 36px;
-    line-height: 125%;
-    margin-bottom: 25px;
+    padding-top: 136px;
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 10px;
   }
 }
 
