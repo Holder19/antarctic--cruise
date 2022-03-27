@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -288,18 +288,18 @@ textarea {
 }
 
 .social__link--facebook::before {
-  -webkit-mask: url("../../icons/sprite.svg#social-icon-facebook") no-repeat center/30px;
-  mask: url("../../icons/sprite.svg#social-icon-facebook") no-repeat center/30px;
+  -webkit-mask: url("../icons/sprite.svg#social-icon-facebook") no-repeat center/30px;
+  mask: url("../icons/sprite.svg#social-icon-facebook") no-repeat center/30px;
 }
 
 .social__link--instagram::before {
-  -webkit-mask: url("../../icons/sprite.svg#social-icon-instagram") no-repeat center/30px;
-  mask: url("../../icons/sprite.svg#social-icon-instagram") no-repeat center/30px;
+  -webkit-mask: url("../icons/sprite.svg#social-icon-instagram") no-repeat center/30px;
+  mask: url("../icons/sprite.svg#social-icon-instagram") no-repeat center/30px;
 }
 
 .social__link--twitter::before {
-  -webkit-mask: url("../../icons/sprite.svg#social-icon-twitter") no-repeat center/30px;
-  mask: url("../../icons/sprite.svg#social-icon-twitter") no-repeat center/30px;
+  -webkit-mask: url("../icons/sprite.svg#social-icon-twitter") no-repeat center/30px;
+  mask: url("../icons/sprite.svg#social-icon-twitter") no-repeat center/30px;
 }
 
 .intro h1 {
@@ -375,7 +375,7 @@ textarea {
 
 .features {
   background-color: var(--bg-blue-color);
-  background-image: url("../../img/content/bg-features-desktop.png");
+  background-image: url("../img/content/bg-features-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -427,7 +427,7 @@ textarea {
 }
 
 .features__item--ship::before {
-  background-image: url("../../icons/sprite.svg#ship-icon");
+  background-image: url("../icons/sprite.svg#ship-icon");
   width: 40px;
   height: 34px;
   left: 22px;
@@ -435,13 +435,13 @@ textarea {
 }
 
 .features__item--check-mark::before {
-  background-image: url("../../icons/sprite.svg#check-marks-icon");
+  background-image: url("../icons/sprite.svg#check-marks-icon");
   width: 40px;
   height: 34px;
 }
 
 .features__item--speedboat::before {
-  background-image: url("../../icons/sprite.svg#speedboat-icon");
+  background-image: url("../icons/sprite.svg#speedboat-icon");
   width: 40px;
   height: 34px;
 }
@@ -612,7 +612,7 @@ textarea {
 }
 
 .booking {
-  background-image: url("../../img/content/booking-bg-image-desktop.png");
+  background-image: url("../img/content/booking-bg-image-desktop.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -767,7 +767,7 @@ textarea {
 
 .booking__form-wrapper input[type="checkbox"]:checked + label::after {
   content: "";
-  background-image: url("../../icons/sprite.svg#checkbox-on");
+  background-image: url("../icons/sprite.svg#checkbox-on");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 20px 20px;
@@ -848,7 +848,7 @@ textarea {
   content: "";
   width: 18px;
   height: 22px;
-  background-image: url("../../icons/sprite.svg#marker-icon");
+  background-image: url("../icons/sprite.svg#marker-icon");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -872,7 +872,7 @@ textarea {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url("../../icons/sprite.svg#phone-icon");
+  background-image: url("../icons/sprite.svg#phone-icon");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -887,11 +887,11 @@ textarea {
 
 @media (min-width: 1180px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1180px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1180px) and (min-resolution: 2dppx) {
   .features {
-    background-image: url("../../img/content/bg-features-desktop@2x.png");
+    background-image: url("../img/content/bg-features-desktop@2x.png");
   }
 
   .booking {
-    background-image: url("../../img/content/booking-bg-image-desktop@2x.png");
+    background-image: url("../img/content/booking-bg-image-desktop@2x.png");
   }
 }
 
@@ -989,7 +989,7 @@ textarea {
   }
 
   .features {
-    background-image: url("../../img/content/bg-features-tablet.png");
+    background-image: url("../img/content/bg-features-tablet.png");
   }
 
   .features h2 {
@@ -1048,7 +1048,7 @@ textarea {
   }
 
   .booking {
-    background-image: url("../../img/content/booking-bg-image-tablet.png");
+    background-image: url("../img/content/booking-bg-image-tablet.png");
     min-height: 805px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1095,11 +1095,11 @@ textarea {
 
 @media (max-width: 1179px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1179px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1179px) and (min-resolution: 2dppx) {
   .features {
-    background-image: url("../../img/content/bg-features-tablet@2x.png");
+    background-image: url("../img/content/bg-features-tablet@2x.png");
   }
 
   .booking {
-    background-image: url("../../img/content/booking-bg-image-tablet@2x.png");
+    background-image: url("../img/content/booking-bg-image-tablet@2x.png");
   }
 }
 
@@ -1283,7 +1283,7 @@ textarea {
   }
 
   .features {
-    background-image: url("../../img/content/bg-features-mobile.png");
+    background-image: url("../img/content/bg-features-mobile.png");
   }
 
   .features h2 {
@@ -1338,7 +1338,7 @@ textarea {
   }
 
   .booking {
-    background-image: url("../../img/content/booking-bg-image-mobile.png");
+    background-image: url("../img/content/booking-bg-image-mobile.png");
     min-height: 760px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -1393,10 +1393,10 @@ textarea {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .features {
-    background-image: url("../../img/content/bg-features-mobile@2x.png");
+    background-image: url("../img/content/bg-features-mobile@2x.png");
   }
 
   .booking {
-    background-image: url("../../img/content/booking-bg-image-mobile@2x.png");
+    background-image: url("../img/content/booking-bg-image-mobile@2x.png");
   }
 }

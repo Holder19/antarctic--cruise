@@ -10,7 +10,10 @@
       <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
       <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
       <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
-
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="img/favicons/icon.svg" sizes="any" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png">
+      <link rel="manifest" href="./manifest.webmanifest">
     </head>
     <body class="page__body">
       <header class="page__header header">
@@ -432,11 +435,11 @@
                   <input type="text" name="name-field" id="name" placeholder="Имя" required>
                 </li>
                 <li>
-                  <label for="name"><span class="visually-hidden">Телефон</span></label>
+                  <label for="tel"><span class="visually-hidden">Телефон</span></label>
                   <input type="tel" name="tel-field" id="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Телефон" required>
                 </li>
                 <li>
-                  <label for="name"><span class="visually-hidden">Email</span></label>
+                  <label for="email"><span class="visually-hidden">Email</span></label>
                   <input type="email" name="email-field" id="email" placeholder="Email" required>
                 </li>
               </ul>
