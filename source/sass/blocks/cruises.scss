@@ -88,6 +88,7 @@
   display: none;
   width: 260px;
   height: 386px;
+  overflow-y: scroll;
 
   @media (max-width: $tablet) {
     min-width: 309px;

@@ -81,6 +81,7 @@ const copy = () => {
   return gulp.src([
     'source/**.html',
     'source/fonts/**',
+    "source/*.ico",
     'source/img/**',
     'source/favicon/**',
     "source/manifest.webmanifest",

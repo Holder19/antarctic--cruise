@@ -118,8 +118,12 @@ textarea {
   padding: 50px 0;
 }
 
+.page__intro {
+  margin-bottom: 120px;
+  min-height: 577px;
+}
+
 .page__travel {
-  padding-top: 400px;
   padding-bottom: 120px;
 }
 
@@ -223,6 +227,13 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  gap: 100px;
+}
+
+.header__logo {
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .header__nav {
@@ -345,9 +356,6 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .travel__description h2 {
@@ -528,6 +536,7 @@ textarea {
   display: none;
   width: 260px;
   height: 386px;
+  overflow-y: scroll;
 }
 
 .cruises__wrapper--back ul {
@@ -904,9 +913,13 @@ textarea {
     padding: 27px 0;
   }
 
+  .page__intro {
+    margin-bottom: 100px;
+    min-height: 550px;
+  }
+
   .page__travel {
     padding-bottom: 92px;
-    padding-top: 370px;
   }
 
   .page__features {
@@ -934,6 +947,10 @@ textarea {
   .nav a {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .header__inner-wrapper {
+    gap: 50px;
   }
 
   .header__nav a {
@@ -1116,8 +1133,12 @@ textarea {
     padding: 40px 0;
   }
 
+  .page__intro {
+    margin-bottom: 65px;
+    min-height: 472px;
+  }
+
   .page__travel {
-    padding-top: 240px;
     padding-bottom: 65px;
   }
 
@@ -1262,6 +1283,8 @@ textarea {
   .travel__inner-wrapper {
     -ms-grid-columns: none;
     grid-template-columns: none;
+    -ms-grid-rows: 50% 50%;
+    grid-template-rows: 50% 50%;
     gap: 33px;
     justify-items: center;
   }
@@ -1273,12 +1296,9 @@ textarea {
 
   .travel__description p {
     text-align: initial;
-    max-width: 290px;
   }
 
   .travel__img-wrapper img {
-    height: 186px;
-    width: 290px;
     min-height: 164px;
   }
 

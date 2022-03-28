@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 39px;
   align-items: center;
-  justify-content: space-between;
 
   @media (max-width: $tablet) {
     gap: 30px;
@@ -11,6 +10,7 @@
 
   @media (max-width: $mobile) {
     grid-template-columns: none;
+    grid-template-rows: 50% 50%;
     gap: 33px;
     justify-items: center;
   }
@@ -47,7 +47,6 @@
 
   @media (max-width: $mobile) {
     text-align: initial;
-    max-width: 290px;
   }
 }
 
@@ -61,8 +60,6 @@
   }
 
   @media (max-width: $mobile) {
-    height: 186px;
-    width: 290px;
     min-height: 164px;
   }
 }

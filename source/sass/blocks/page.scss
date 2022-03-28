@@ -49,17 +49,29 @@
   }
 }
 
+.page__intro {
+  margin-bottom: 120px;
+  min-height: 577px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 100px;
+    min-height: 550px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 65px;
+    min-height: 472px;
+  }
+}
+
 .page__travel {
-  padding-top: 400px;
   padding-bottom: 120px;
 
   @media (max-width: $tablet) {
     padding-bottom: 92px;
-    padding-top: 370px;
   }
 
   @media (max-width: $mobile) {
-    padding-top: 240px;
     padding-bottom: 65px;
   }
 }
