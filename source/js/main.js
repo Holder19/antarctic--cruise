@@ -7,6 +7,7 @@ const inputName = bookingForm.querySelector('#name');
 const inputTel = bookingForm.querySelector('#tel');
 const inputMail = bookingForm.querySelector('#email');
 const inputCheckbox = bookingForm.querySelector('#checkbox');
+const logo = document.querySelector('#logo');
 
 const navMenuToggler = () => {
   nav.classList.remove('nav--nojs');
@@ -16,8 +17,10 @@ const navMenuToggler = () => {
     if (nav.classList.contains('nav--closed')) {
       nav.classList.remove('nav--closed');
       nav.classList.add('nav--opened');
+      logo.style.visibility = 'hidden';
     } else {
       nav.classList.remove('nav--opened');
+      logo.style.visibility = 'initial';
       nav.classList.add('nav--closed');
     }
   });

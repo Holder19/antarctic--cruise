@@ -10,8 +10,7 @@
 
   @media (max-width: $mobile) {
     grid-template-columns: none;
-    grid-template-rows: 50% 50%;
-    gap: 33px;
+    gap: 32px;
     justify-items: center;
   }
 }
@@ -33,6 +32,7 @@
   @media (max-width: $mobile) {
     font-size: 24px;
     line-height: 140%;
+    margin-bottom: 17px;
   }
 }
 

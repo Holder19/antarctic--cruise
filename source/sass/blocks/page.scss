@@ -6,12 +6,12 @@
   font-weight: 400;
   color: var(--default-font-color);
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .page__leveler {
   @media (min-width: $desktop) {
-    margin: 0 auto;
-    width: 1160px;
+    margin: 0 7.54%;
   }
 
   @media (max-width: $tablet) {
@@ -26,7 +26,10 @@
 .page__body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  min-height: 100vh;
+  min-height: 100%;
+  align-content: start;
+  width: 100%;
+
 }
 
 .page__header {
@@ -59,7 +62,7 @@
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     min-height: 472px;
   }
 }
@@ -104,7 +107,7 @@
 }
 
 .page__booking {
-  padding: 50px 163px;
+  padding: 50px 11.93%;
 
   @media (max-width: $tablet) {
     padding: 72px;
@@ -124,6 +127,6 @@
   }
 
   @media (max-width: $mobile) {
-    padding: 57px 0;
+    padding: 57px 0 48px;
   }
 }

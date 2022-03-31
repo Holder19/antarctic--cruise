@@ -70,7 +70,7 @@
     flex-direction: column;
     padding: 60px 30px 40px 15px;
     min-width: 285px;
-    width: 100%;
+    width: calc(100% - 35px);
     list-style: none;
   }
 }
@@ -97,6 +97,7 @@
 }
 
 .nav--opened .nav__toggle {
+ @media (max-width:$mobile) {
   z-index: 3;
   background: none;
   display: block;
@@ -119,6 +120,7 @@
   &::after {
     transform: rotate(-45deg);
   }
+ }
 }
 
 .nav__logo-wrapper_blue {
@@ -129,8 +131,8 @@
   @media (max-width: $mobile) {
     position: absolute;
     z-index: 3;
-    left: 18px;
-    top: 20px;
+    left: 52px;
+    top: 14px;
   }
 }
 

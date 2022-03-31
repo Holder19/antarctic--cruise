@@ -2,6 +2,7 @@
   background-image: url("../img/content/booking-bg-image-desktop.png");
   background-size: cover;
   background-position: center;
+  background-color: var(--bg-blue-color);
   background-repeat: no-repeat;
   min-height: 555px;
   display: flex;
@@ -60,9 +61,10 @@
   }
 
   @media (max-width: $mobile) {
-    font-size: 28px;
-    line-height: 130%;
+    font-size: 27px;
+    line-height: 120%;
     text-align: center;
+    margin-bottom: 13px;
   }
 }
 
@@ -99,7 +101,8 @@
 
   @media (max-width: $mobile) {
     width: 100%;
-    padding: 35px 30px;
+    padding: 35px 30px 42px;
+    max-width: 320px;
   }
 }
 
@@ -128,26 +131,35 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 20px;
+  gap: 18px;
+  margin-bottom: 14px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 17px;
+  }
 }
 
 .booking__form-wrapper li {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .booking__form-wrapper input {
   padding: 11px 16px;
-  width: 100%;
   color: var(--default-font-color);
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+  flex-grow: 1;
 
   &::placeholder {
     opacity: 0.7;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 9px;
   }
 }
 
@@ -206,13 +218,15 @@
   line-height: 150%;
   padding: 9px;
   background-color: var(--default-white-color);
-  min-width: 303px;
+  min-width: 100%;
+  max-width: 303px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-top: auto;
   border: none;
+  user-select: none;
 
   &:hover {
     opacity: 0.8;

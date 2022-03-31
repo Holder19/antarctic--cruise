@@ -24,10 +24,10 @@
 
 .cruises > ul {
   display: grid;
-  grid-template-columns: repeat(4, 260px);
+  grid-template-columns: repeat(auto-fill, 260px);
   align-items: center;
   gap: 30px;
-  padding: 0 15px;
+  justify-content: center;
 
   @media (max-width: $tablet) {
     grid-template-columns: 309px 309px;
@@ -59,6 +59,7 @@
 .cruises__img-wrapper img {
   object-fit: cover;
   min-width: 260px;
+  width: 100%;
 
   @media (max-width: $tablet) {
     min-width: 309px;
@@ -79,6 +80,15 @@
   font-size: 18px;
   line-height: 150%;
   color: var(--default-white-color);
+
+  @media (max-width: $tablet) {
+    margin: auto 40px 26px;
+    font-size: 19px;
+  }
+
+  @media (max-width: $mobile) {
+    margin: auto 26px 16px;
+  }
 }
 
 
@@ -89,15 +99,16 @@
   width: 260px;
   height: 386px;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   @media (max-width: $tablet) {
     min-width: 309px;
-    padding: 21px 35px;
+    padding: 29px 35px;
   }
 
   @media (max-width: $mobile) {
     min-width: 270px;
-    padding: 21px 25px;
+    padding: 29px 25px;
   }
 }
 
@@ -115,7 +126,7 @@
   font-size: 18px;
   line-height: 150%;
   color: var(--default-white-color);
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .cruises__wrapper--back h4 {
@@ -151,6 +162,7 @@
   align-items: center;
   cursor: pointer;
   margin-top: auto;
+  user-select: none;
 
   &:hover {
     opacity: 0.8;
@@ -159,6 +171,15 @@
 
 .cruises__item:hover .cruises__wrapper--front {
   display: none;
+}
+
+.cruises__item:focus-visible .cruises__wrapper--front {
+  display: none;
+}
+
+.cruises__item:focus-visible .cruises__wrapper--back {
+  display: flex;
+  flex-direction: column;
 }
 
 .cruises__item:hover .cruises__wrapper--back {
