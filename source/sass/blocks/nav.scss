@@ -97,30 +97,30 @@
 }
 
 .nav--opened .nav__toggle {
- @media (max-width:$mobile) {
-  z-index: 3;
-  background: none;
-  display: block;
+  @media (max-width: $mobile) {
+    z-index: 3;
+    background: none;
+    display: block;
 
-  &::before,
-  &::after {
-    top: 25px;
-    right: 15px;
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 2px;
-    background-color: var(--default-font-color);
-  }
+    &::before,
+    &::after {
+      top: 25px;
+      right: 15px;
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 2px;
+      background-color: var(--default-font-color);
+    }
 
-  &::before {
-    transform: rotate(45deg);
-  }
+    &::before {
+      transform: rotate(45deg);
+    }
 
-  &::after {
-    transform: rotate(-45deg);
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
- }
 }
 
 .nav__logo-wrapper_blue {
