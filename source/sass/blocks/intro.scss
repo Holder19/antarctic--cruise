@@ -54,6 +54,7 @@
   width: 100%;
   z-index: -1;
   height: 650px;
+  background-color: var(--bg-blue-color);
 
   @media (max-width: $tablet) {
     height: 638px;

@@ -6,7 +6,7 @@
   display: flex;
   gap: 37px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 
   @media (max-width: $tablet) {
     gap: 25px;
@@ -24,9 +24,18 @@
 }
 
 .footer__nav ul {
+  margin-top: 5px;
+  min-width: 596px;
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+    min-width: 442px;
+  }
+
   @media (max-width: $mobile) {
     flex-direction: column;
     gap: 0;
+    min-width: inherit;
   }
 }
 
@@ -35,9 +44,15 @@
   padding: 0;
   display: flex;
   gap: 31px;
+  margin-top: 10px;
+  min-width: 120px;
+  max-width: 300px;
+  flex-wrap: wrap;
 
   @media (max-width: $tablet) {
     gap: 14px;
+    margin-top: 0;
+    min-width: 90px;
   }
 }
 

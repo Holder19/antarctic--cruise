@@ -10,18 +10,41 @@
 
 .social__link--facebook {
   &::before {
-    mask: url("../icons/sprite.svg#social-icon-facebook") no-repeat center / 30px;
+    mask: url("../icons/sprite.svg#social-icon-facebook") no-repeat center / 37px;
+    width: 15px;
+
+    @media (max-width: $tablet) {
+      mask-size: 30px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 10px;
+    }
   }
 }
 
 .social__link--instagram {
   &::before {
-    mask: url("../icons/sprite.svg#social-icon-instagram") no-repeat center/ 30px;
+    mask: url("../icons/sprite.svg#social-icon-instagram") no-repeat center/ 36px;
+    width: 23px;
+
+    @media (max-width: $tablet) {
+      width: 30px;
+      mask-size: 31px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 31px;
+    }
   }
 }
 
 .social__link--twitter {
   &::before {
     mask: url("../icons/sprite.svg#social-icon-twitter") no-repeat center / 30px;
+
+    @media (max-width: $mobile) {
+      mask-size: 27px;
+    }
   }
 }

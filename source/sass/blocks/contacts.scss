@@ -4,7 +4,7 @@
   width: 100%;
 
   @media (max-width: $tablet) {
-    gap: 34px;
+    gap: 30px;
   }
 
   @media (max-width: $mobile) {
@@ -40,9 +40,11 @@
 .contacts__content-wrapper {
   align-self: center;
   width: 50%;
+  padding-top: 20px;
 
   @media (max-width: $mobile) {
     width: auto;
+    padding-top: 0;
   }
 }
 
@@ -80,8 +82,14 @@
     background-position: center;
     align-self: flex-start;
 
+    @media (min-width: $desktop) and (max-width: 1200px) {
+      width: 22px;
+    }
+
     @media (max-width: $tablet) {
-      width: 30px;
+      width: 27px;
+      height: 30px;
+      background-size: 40px;
     }
   }
 }
@@ -94,6 +102,7 @@
   display: inline-flex;
   gap: 10px;
   align-items: center;
+  margin-bottom: 20px;
 
 
   &::before {

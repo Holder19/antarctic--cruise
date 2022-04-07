@@ -131,11 +131,12 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-bottom: 14px;
+  gap: 16px;
+  margin-bottom: 18px;
 
   @media (max-width: $mobile) {
     margin-bottom: 17px;
+    gap: 18px;
   }
 }
 
@@ -172,7 +173,7 @@
 .booking__form-wrapper input[type="checkbox"] + label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   position: relative;
   cursor: pointer;
   font-size: 10px;
