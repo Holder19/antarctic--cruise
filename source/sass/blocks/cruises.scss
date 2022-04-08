@@ -100,7 +100,7 @@
 
 .cruises__wrapper--back {
   background-color: var(--default-font-color);
-  padding: 30px 25px;
+  padding: 27px 25px 30px;
   width: 260px;
   display: flex;
   flex-direction: column;
@@ -123,8 +123,8 @@
 }
 
 .cruises__wrapper--back ul {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: row;
   gap: 10px;
   margin-bottom: 20px;
 }

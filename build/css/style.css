@@ -150,12 +150,10 @@ textarea {
 .nav ul {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   gap: 34px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  grid-auto-flow: column;
 }
 
 .nav li {
@@ -225,16 +223,16 @@ textarea {
 }
 
 .footer__inner-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   gap: 37px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
+  -ms-grid-columns: -webkit-min-content 1fr auto;
+  -ms-grid-columns: min-content 1fr auto;
+  grid-template-columns: -webkit-min-content 1fr auto;
+  grid-template-columns: min-content 1fr auto;
 }
 
 .footer__nav {
@@ -247,17 +245,19 @@ textarea {
 }
 
 .footer__social ul {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   gap: 31px;
   margin-top: 10px;
   min-width: 120px;
   max-width: 300px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
 }
 
 .footer__social li {
@@ -387,11 +387,10 @@ textarea {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 40px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -412,7 +411,6 @@ textarea {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 9px;
 }
 
 .features li::before {
@@ -449,6 +447,7 @@ textarea {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  margin-bottom: 10px;
 }
 
 .features p {
@@ -530,7 +529,7 @@ textarea {
 
 .cruises__wrapper--back {
   background-color: var(--default-font-color);
-  padding: 30px 25px;
+  padding: 27px 25px 30px;
   width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,13 +548,9 @@ textarea {
 }
 
 .cruises__wrapper--back ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -706,13 +701,9 @@ textarea {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
   gap: 16px;
   margin-bottom: 18px;
 }
@@ -764,12 +755,13 @@ textarea {
 }
 
 .booking__form-wrapper input[type="checkbox"] + label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
   gap: 8px;
   position: relative;
   cursor: pointer;
@@ -843,11 +835,12 @@ textarea {
 }
 
 .contacts__inner-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   gap: 100px;
   width: 100%;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
 }
 
 .contacts__map-wrapper {
@@ -858,7 +851,6 @@ textarea {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  width: 50%;
   padding-top: 20px;
 }
 
@@ -878,9 +870,12 @@ textarea {
   line-height: 150%;
   margin-bottom: 20px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content auto;
+  -ms-grid-columns: min-content auto;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
   gap: 10px;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -904,9 +899,12 @@ textarea {
   font-size: 16px;
   line-height: 150%;
   color: var(--default-font-color);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: -webkit-min-content auto;
+  -ms-grid-columns: min-content auto;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
   gap: 10px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1166,8 +1164,8 @@ textarea {
   }
 
   .contacts__content-wrapper address::before {
-    width: 27px;
-    height: 30px;
+    width: 20px;
+    height: 29px;
     background-size: 40px;
   }
 }
@@ -1223,6 +1221,7 @@ textarea {
 
   .nav ul {
     gap: 13px;
+    grid-auto-flow: inherit;
   }
 
   .nav--opened a {
@@ -1239,15 +1238,13 @@ textarea {
     top: 0;
     z-index: 2;
     right: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     padding: 60px 30px 40px 15px;
     min-width: 285px;
     width: calc(100% - 35px);
     list-style: none;
     min-height: 100%;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
   }
 
   .nav--nojs ul {
@@ -1339,22 +1336,19 @@ textarea {
 
   .footer__inner-wrapper {
     gap: 33px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 
   .footer__nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     gap: 0;
     min-width: inherit;
+  }
+
+  .footer__social ul {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
   }
 
   .social__link--facebook::before {
@@ -1426,7 +1420,6 @@ textarea {
   .features li {
     max-width: 290px;
     padding: 73px 21px 21px;
-    gap: 7px;
     min-width: 290px;
   }
 
@@ -1440,6 +1433,7 @@ textarea {
 
   .features h3 {
     max-width: 210px;
+    margin-bottom: 7px;
   }
 
   .cruises h2 {
@@ -1519,11 +1513,9 @@ textarea {
   }
 
   .contacts__inner-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
     gap: 43px;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 
   .contacts__map iframe {
@@ -1533,11 +1525,15 @@ textarea {
 
   .contacts__map-wrapper {
     width: 100%;
+    -ms-grid-row: 2;
+    grid-row: 2;
   }
 
   .contacts__content-wrapper {
     width: auto;
     padding-top: 0;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
   }
 }
 
@@ -1552,10 +1548,6 @@ textarea {
 }
 
 @media (min-width: 1024px) and (max-width: 1365px) {
-  .features li {
-    width: 29.35%;
-  }
-
   .contacts__map iframe {
     width: 100%;
   }

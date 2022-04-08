@@ -129,8 +129,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
   gap: 16px;
   margin-bottom: 18px;
 
@@ -171,8 +171,9 @@
 }
 
 .booking__form-wrapper input[type="checkbox"] + label {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: auto auto;
   gap: 8px;
   position: relative;
   cursor: pointer;

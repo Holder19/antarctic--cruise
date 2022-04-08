@@ -3,10 +3,10 @@
 }
 
 .footer__inner-wrapper {
-  display: flex;
+  display: grid;
   gap: 37px;
-  justify-content: space-between;
   align-items: start;
+  grid-template-columns: min-content 1fr auto;
 
   @media (max-width: $tablet) {
     gap: 25px;
@@ -14,8 +14,7 @@
 
   @media (max-width: $mobile) {
     gap: 33px;
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: auto;
   }
 }
 
@@ -33,26 +32,30 @@
   }
 
   @media (max-width: $mobile) {
-    flex-direction: column;
     gap: 0;
     min-width: inherit;
   }
 }
 
 .footer__social ul {
+  justify-content: end;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
   gap: 31px;
   margin-top: 10px;
   min-width: 120px;
   max-width: 300px;
-  flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
 
   @media (max-width: $tablet) {
     gap: 14px;
     margin-top: 0;
     min-width: 90px;
+  }
+
+  @media (max-width: $mobile) {
+    justify-content: start;
   }
 }
 
