@@ -8,6 +8,8 @@ const inputTel = bookingForm.querySelector('#tel');
 const inputMail = bookingForm.querySelector('#email');
 const inputCheckbox = bookingForm.querySelector('#checkbox');
 const logo = document.querySelector('#logo');
+const overlay = document.querySelector('.overlay');
+const navList = document.querySelector('#nav-list');
 
 const navMenuToggler = () => {
   nav.classList.remove('nav--nojs');
@@ -18,12 +20,32 @@ const navMenuToggler = () => {
       nav.classList.remove('nav--closed');
       nav.classList.add('nav--opened');
       logo.style.visibility = 'hidden';
+      overlay.classList.add('overlay--visible');
+      document.body.style.overflowY = 'hidden';
+      navList.focus();
     } else {
       nav.classList.remove('nav--opened');
       logo.style.visibility = 'initial';
       nav.classList.add('nav--closed');
+      overlay.classList.remove('overlay--visible');
+      document.body.style.overflowY = 'inherit';
     }
   });
+};
+
+const handlerOnNavList = (evt) => {
+  if (evt.target.closest('li')) {
+    document.body.style.overflowY = 'inherit';
+    overlay.classList.remove('overlay--visible');
+    nav.classList.remove('nav--opened');
+    nav.classList.add('nav--closed');
+    logo.style.visibility = 'initial';
+  } else {
+    document.body.style.overflowY = 'hidden';
+    nav.classList.add('nav--opened');
+    logo.style.visibility = 'hidden';
+    nav.classList.remove('nav--closed');
+  }
 };
 
 const onInputNameChange = () => {
@@ -80,3 +102,4 @@ const addFormListeners = () => {
 
 addFormListeners();
 navMenuToggler();
+navList.addEventListener('click', handlerOnNavList);

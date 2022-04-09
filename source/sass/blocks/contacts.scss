@@ -16,7 +16,7 @@
 
 .contacts__map iframe {
   @media (min-width: $desktop) and (max-width: 1365px) {
-    width: 100%;
+    width: 450px;
   }
 
   @media (max-width: $tablet) {
@@ -31,8 +31,6 @@
 }
 
 .contacts__map-wrapper {
-  width: 50%;
-
   @media (max-width: $mobile) {
     width: 100%;
     grid-row: 2;
