@@ -13,7 +13,7 @@
   }
 
   @media (max-width: $mobile) {
-    gap: 33px;
+    gap: 32px;
     grid-template-columns: auto;
   }
 }
@@ -23,7 +23,6 @@
 }
 
 .footer__nav ul {
-  margin-top: 5px;
   min-width: 596px;
 
   @media (max-width: $tablet) {
@@ -34,6 +33,12 @@
   @media (max-width: $mobile) {
     gap: 0;
     min-width: inherit;
+  }
+}
+
+.footer__nav li {
+  @media (max-width: $mobile) {
+    margin: 0;
   }
 }
 
